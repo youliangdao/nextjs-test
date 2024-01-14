@@ -25,7 +25,7 @@ test("status?=public のアクセス場合「公開」が選択されている",
   expect(combobox).toHaveDisplayValue("公開");
 });
 
-test("staus?=private のアクセス場合「下書き」が選択されている", async () => {
+test("status?=private のアクセス場合「下書き」が選択されている", async () => {
   const { combobox } = setup("/my/posts?status=private");
   expect(combobox).toHaveDisplayValue("下書き");
 });
